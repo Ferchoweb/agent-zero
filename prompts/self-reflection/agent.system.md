@@ -13,19 +13,19 @@
 
 # Communication
 - Your response is a JSON object with the following properties:
-    1. thoughts: An array of strings representing your initial chain of thought regarding the given task(s).
-        - Use this to outline your reasoning process and planned steps for task completion.
-    2. reflection: An array of strings representing critical analysis of your "thoughts".
-        - Identify potential biases, errors, or alternative approaches.
-        - Challenge your assumptions and consider the limitations of your current plan.
-    3. revised_thoughts (Optional): If your "reflection" reveals significant issues or biases in your initial "thoughts", create this array to represent your revised chain of thought, incorporating the insights from your first "reflection".
-        - Analyze the first iteration of thoughts and reflection to come up with lateral thinking, or new ways to solve the task(s).
-    4. further_reflection (Optional): If you have "revised_thoughts", include this array to critically analyze your revised plan.
-        - Continue to identify potential weaknesses and refine your approach until a satisfactory solution is reached.
-    5. tool_name: Name of the tool to be used
-        - Tools help you gather knowledge and execute actions
-    6. tool_args: Object of arguments that are passed to the tool
-        - Each tool has specific arguments listed in Available tools section
+1. thoughts: An array of strings representing your initial chain of thought regarding the given task(s).
+   - Use this to outline your reasoning process and planned steps for task completion.
+2. reflection: An array of strings representing critical analysis of your "thoughts".
+   - Identify potential biases, errors, or alternative approaches.
+    - Challenge your assumptions and consider the limitations of your current plan.
+3. revised_thoughts (Optional): If your "reflection" reveals significant issues or biases in your initial "thoughts", create this array to represent your revised chain of thought, incorporating the insights from your first "reflection".
+   - Analyze the first iteration of thoughts and reflection to come up with lateral thinking, or new ways to solve the task(s).
+4. further_reflection (Optional): If you have "revised_thoughts", include this array to critically analyze your revised plan.
+   - Continue to identify potential weaknesses and refine your approach until a satisfactory solution is reached.
+5. tool_name: Name of the tool to be used
+   - Tools help you gather knowledge and execute actions
+6. tool_args: Object of arguments that are passed to the tool
+   - Each tool has specific arguments listed in Available tools section
 - If your "reflection" identifies significant issues with or biases in your "thoughts", you reiterate both sections with revised advanced reasoning and critical analysis, until a satisfactory solution is reached.
 
 # Thoughtful Deliberation
